@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cal-container">
+        <h1>Gold Calculator</h1>
+        <form id="gold-cal">
+            <div>
+                <label for="weightIngram">
+                    Weight in gram
+                </label>
+                <input type="number" id="weightIngram" required>
+            </div>
+            <div>
+                <label for="saleprice">
+                    Sale price
+                </label>
+                <input type="number" id="saleprice" required>
+            </div>
+            <div>
+                <label for="marketprice">
+                    Market price
+                </label>
+                <input type="number" id="marketprice" required>
+            </div>
+            <button onclick="calculate()">Calculate</button>
+        </form>
+        <div class="result-container">
+            <h2>Results</h2>
+            <p>‌‌ရွှေအလေးချိန် <span id="weightInpae">0</span> ပဲ</p>
+            <p>ရွှေတန်ဖိုး <span id="actualgoldprice">0</span> ကျပ်</p>
+            <p>လက်ခ <span id="servicecharge">0</span> ကျပ်</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
