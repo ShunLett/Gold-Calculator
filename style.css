@@ -80,8 +80,12 @@ span {
 
 @media(max-width: 800px) {
     .cal-container {
-        width: 70%;
+        width: 75%;
     }
 }
-    
+
+@media(max-width:800px) {
+    input {
+        width:60%;
+    }
 }
